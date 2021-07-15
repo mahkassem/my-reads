@@ -1,12 +1,8 @@
 import React from 'react'
 import BooksList from './BooksList';
+import PropTypes from 'prop-types';
 
 class Shelf extends React.Component {
-    constructor(props) {
-        super(props)
-        this.props = props;
-    }
-
     render() {
         const { books, title, moveBook, bookShelf } = this.props;
         return (
@@ -17,5 +13,11 @@ class Shelf extends React.Component {
         )
     }
 }
+Shelf.propTypes = {
+    books: PropTypes.array.isRequired,
+    title: PropTypes.string.isRequired,
+    moveBook: PropTypes.func.isRequired,
+    bookShelf: PropTypes.func.isRequired
+};
 
 export default Shelf

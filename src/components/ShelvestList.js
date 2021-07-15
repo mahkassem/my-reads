@@ -19,11 +19,6 @@ class ShelvesList extends React.Component {
         ]
     }
 
-    constructor(props) {
-        super(props)
-        this.props = props;
-    }
-
     render() {
         const { books, moveBook, bookShelf } = this.props
         const { shelves } = this.state

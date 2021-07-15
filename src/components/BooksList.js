@@ -2,11 +2,6 @@ import React from 'react'
 import Book from './Book';
 
 class BooksList extends React.Component {
-    constructor(props) {
-        super(props)
-        this.props = props;
-    }
-
     render() {
         const { books, moveBook, bookShelf } = this.props;
         return (

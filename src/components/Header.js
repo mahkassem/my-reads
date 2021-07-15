@@ -1,12 +1,6 @@
 import React from 'react'
 
 class Header extends React.Component {
-
-    constructor(props) {
-        super(props)
-        this.props = props
-    }
-
     render() {
         const { fetchBooks } = this.props;
         return (

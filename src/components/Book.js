@@ -7,7 +7,6 @@ class Book extends React.Component {
     }
 
     handleChange = (book, e) => {
-        console.log(book, e.target.value)
         this.props.moveBook(book, e.target.value)
     }
 

@@ -63,7 +63,7 @@ class BooksApp extends React.Component {
           <Home books={this.state.books} moveBook={this.moveBook} bookShelf={this.bookShelf} fetchBooks={this.fetchBooks} />
         )} />
         <Route exact path='/search'>
-          <Search moveBook={this.moveBook} bookShelf={this.bookShelf} />
+          <Search moveBook={this.moveBook} isLoading={this.isLoading} bookShelf={this.bookShelf} />
         </Route>
         {this.state.loading &&
           <div className="loading-indicator">
